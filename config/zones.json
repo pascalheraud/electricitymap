@@ -1063,6 +1063,20 @@
     },
     "timezone": null
   },
+  "GB-OKR": {
+    "contributors": [
+      "https://github.com/pascalheraud"
+    ],
+    "capacity": {
+      "oil": 257.88,
+      "wind": 30
+    },
+    "flag_file_name": "aw.png",
+    "parsers": {
+      "production": "AW.fetch_production"
+    },
+    "timezone": "America/Aruba"
+  },
   "GE": {
     "_comment": "source:http://www.gse.com.ge/for-customers/data-from-the-power-system, gas incl. 13 MW of coal",
     "capacity": {

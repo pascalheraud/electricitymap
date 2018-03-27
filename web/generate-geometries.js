@@ -214,6 +214,7 @@ const zoneDefinitions = [
   {zoneName: 'GA', type: 'country', id: 'GAB'},
   {zoneName: 'GB', type: 'subunits', subunits: ['ENG', 'SCT', 'WLS']},
   {zoneName: 'GB-NIR', type: 'subunits', subunits: ['NIR']},
+  {zoneName: 'GB-MO', countryId: 'GBR', stateId: 'GB.MO', type: 'state'},
   {zoneName: 'GD', type: 'country', id: 'GRD'},
   {zoneName: 'GE', type: 'country', id: 'GEO'},
   {zoneName: 'GF', type: 'country', id: 'GUF'},
@@ -511,7 +512,7 @@ const zoneDefinitions = [
 ];
 
 const getDataForZone = (zone, mergeStates) => {
-  /* for a specifi zone, defined by an Object having at least `zoneName` and
+  /* for a specific zone, defined by an Object having at least `zoneName` and
    * `type` as properties, call the corresponding function to get the data */
   if (zone.type === 'country'){
     return getCountry(zone.id)
